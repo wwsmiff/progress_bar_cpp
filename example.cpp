@@ -15,7 +15,7 @@ int main()
         foo.fillUp(); // calling fillUp()
     } 
 
-    foo.end(); // Ending foo;
+	foo.end();
 
 	std::cout << "Done!" << std::endl; // Printing "Done!" to the console
 
