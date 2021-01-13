@@ -3,4 +3,4 @@
 ### This is a simple library for progress bars in c++.
 
 ## The output of example.cpp:
-![](progress-bar.gif)
+![](progress_bar.gif)
