@@ -1,4 +1,4 @@
-#include "pb.h"
+#include "include/progress_bar.hpp"
 /* Defining the constructor */
 progressBar::progressBar(char fillChar, unsigned int size)
 {
