@@ -13,7 +13,8 @@ int main()
 	{
 		usleep(0.1 * micros); // A delay of 0.1 second(s)
 		foo.fillUp();
-		foo.displayPercentage();
+		foo.displayInfo("One");
+		foo.displayInfo("Two");
 	}
 
 	foo.end();

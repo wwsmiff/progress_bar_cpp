@@ -26,16 +26,13 @@ void progressBar::fillUpCells(unsigned int cells)
 	for(int i = 1; i < cells; i++)
 	{
 		bar[i] = c;
-		std::cout << "\r";
+		std::cout << '\r';
 		for(int j = 0; j < bar.size(); j++)
 		{
 			std::cout << bar[j] << std::flush;
 		}
 	}
 	pos += cells;
-	float percent = ((float)pos / (float)(bar.size() - 1)) * 100;
-	std::cout << (int)percent << '%';
-
 }
 
 /* Defining fillUp */
@@ -44,7 +41,7 @@ void progressBar::fillUp()
 	bar[pos] = c;
 	pos++;
 	
-	std::cout << "\r";
+	std::cout << '\r';
 	
 	for(int i = 0; i < bar.size(); i++)
 	{
@@ -52,10 +49,11 @@ void progressBar::fillUp()
 	}
 }
 
+/* Displays the percentage beside the bar */
 void progressBar::displayPercentage()
 {
 	float percent = ((float)pos / (float)(bar.size() - 1)) * 100;
-	std::cout << (int)percent << '%';
+	std::cout << (int)percent << "%";
 }
 
 void progressBar::end()
