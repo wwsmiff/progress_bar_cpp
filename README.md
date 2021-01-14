@@ -7,7 +7,7 @@
 
 ## Documentation:
 
-- Initializing a progresss bar - `progressBar name(char fillChar, unsigned int size)`. fillChar is what the progress bar will fill up with. size is the size of the   bar.
+- Initializing a progress bar - `progressBar name(char fillChar, unsigned int size)`. fillChar is what the progress bar will fill up with. size is the size of the     bar.
 - fillUp() - Fills the bar by 1 everytime it is called.
 - fillUpCells(int cells) - Fills the bar upto a given number.
 - end() - Call this function before printing anything when the bar is no longer needed.
