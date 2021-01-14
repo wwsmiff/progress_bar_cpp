@@ -5,7 +5,7 @@
 ## The output of example.cpp:
 ![](progress_bar.gif)
 
-## A practical example:
+## A practical example (practical_example.cpp):
 ![](practical_example.gif)
 
 ## Documentation:
