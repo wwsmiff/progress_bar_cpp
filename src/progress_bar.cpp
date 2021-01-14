@@ -1,4 +1,4 @@
-#include "include/progress_bar.hpp"
+#include "../include/progress_bar.hpp"
 /* Defining the constructor */
 progressBar::progressBar(char notDoneChar, char doneChar, unsigned int size)
 :c(doneChar), ch(notDoneChar), size(size)

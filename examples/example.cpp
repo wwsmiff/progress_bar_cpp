@@ -2,7 +2,7 @@
 it uses libcurl to download a vim colorscheme from https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim */
 #include <iostream>
 #include <curl/curl.h> 
-#include "include/progress_bar.hpp"
+#include "../include/progress_bar.hpp"
 
 int main()
 {
