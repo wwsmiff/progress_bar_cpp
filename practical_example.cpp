@@ -28,4 +28,4 @@ int main()
 	return 0;
 }
 
-/* NOTE: I hard-coded the values since the file is pretty small to use it in bytes or kilobytes */
+/* NOTE: The values are hard-coded since the file is pretty small to use it in bytes or kilobytes */
