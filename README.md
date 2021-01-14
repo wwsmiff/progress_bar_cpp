@@ -3,10 +3,10 @@
 ### This is a simple library for progress bars in c++.
 
 ## The output of example.cpp:
-![](progress_bar.gif)
+![](gifs/progress_bar.gif)
 
 ## A practical example (practical_example.cpp):
-![](practical-example.gif)
+![](gifs/practical-example.gif)
 
 ## Documentation:
 
