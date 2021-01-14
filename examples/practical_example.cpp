@@ -4,7 +4,7 @@
 
 int main()
 {
-	progressBar bar('=', 30);
+	progressBar bar('.', '=', 30);
 
 	std::cout << "Downloading onedark.vim from https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim" << std::endl;
 
