@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <stdio.h>
 
 class progressBar
 {
@@ -12,6 +13,9 @@ class progressBar
 		void fillUpCells(unsigned int cells);
 		/* Fills the bar one by one */
 		void fillUp();
+		/* Displays info beside the bar */
+		void displayPercentage();
+
 	private:
 		unsigned int size = 0;
 		unsigned int pos = 1;

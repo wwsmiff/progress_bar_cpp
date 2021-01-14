@@ -50,7 +50,10 @@ void progressBar::fillUp()
 	{
 		std::cout << bar[i] << std::flush;
 	}
+}
 
+void progressBar::displayPercentage()
+{
 	float percent = ((float)pos / (float)(bar.size() - 1)) * 100;
 	std::cout << (int)percent << '%';
 }
