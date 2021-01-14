@@ -5,6 +5,9 @@
 ## The output of example.cpp:
 ![](progress_bar.gif)
 
+## A practical example:
+![](practical_example.gif)
+
 ## Documentation:
 
 - Initializing a progress bar - `progressBar name(char fillChar, unsigned int size)`. fillChar is what the progress bar will fill up with. size is the size of the     bar.
