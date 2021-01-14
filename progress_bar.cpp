@@ -1,13 +1,19 @@
 #include "include/progress_bar.hpp"
 /* Defining the constructor */
-progressBar::progressBar(char fillChar, unsigned int size)
+progressBar::progressBar(char notDoneChar, char doneChar, unsigned int size)
+:c(doneChar), ch(notDoneChar), size(size)
 {
-	c = fillChar;
-	size = size;
+	if(size <= 100)
+	{
+		size = size;	
+	}
+	else{
+		size = 100;
+	}
 	bar.push_back('[');
 	for(int i = 1; i < size; i++)
 	{
-		bar.push_back('.');
+		bar.push_back(ch);
 	}
 
 	bar.push_back(']');
