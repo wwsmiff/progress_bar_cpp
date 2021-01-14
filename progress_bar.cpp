@@ -9,21 +9,26 @@ progressBar::progressBar(char fillChar, unsigned int size)
 	{
 		bar.push_back('.');
 	}
+
 	bar.push_back(']');
 }
 
 /* Defining fillUpCells */
 void progressBar::fillUpCells(unsigned int cells)
 {
+	pos = 0;
 	for(int i = 1; i < cells; i++)
 	{
 		bar[i] = c;
 		std::cout << "\r";
-		for(int i = 0; i < bar.size(); i++)
+		for(int j = 0; j < bar.size(); j++)
 		{
-			std::cout << bar[i] << std::flush;
+			std::cout << bar[j] << std::flush;
 		}
 	}
+	pos += cells;
+	float percent = ((float)pos / (float)(bar.size() - 1)) * 100;
+	std::cout << (int)percent << '%'<< "\t";
 
 }
 
