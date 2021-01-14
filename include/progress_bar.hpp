@@ -12,6 +12,8 @@ class progressBar
 		void fillUpCells(unsigned int cells);
 		/* Fills the bar one by one */
 		void fillUp();
+		/* Fills the bar upto a given percentage */
+		void fillUpPercent(int percent);
 	private:
 		unsigned int size = 0;
 		unsigned int pos = 1;
