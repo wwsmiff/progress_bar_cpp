@@ -6,7 +6,7 @@
 ![](progress_bar.gif)
 
 ## A practical example:
-![](practical-example.gif)
+![](practical_example.gif)
 
 ## Documentation:
 
