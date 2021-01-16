@@ -19,6 +19,11 @@ class ProgressBar
 		
 		/* Displays the percentage beside the bar */
 		void displayPercentage();
+	
+		unsigned int todo = 0;
+		unsigned int done = 0;
+
+		void displayTasksDone();
 
 	private:
 		unsigned int size = 0;
