@@ -17,6 +17,6 @@
 ## Try it yourself:
 - example.cpp - You can do it by using `make example` assuming you haven't moved any files and use `./example` to run it.
 - practical_example.cpp - You can do it by using `make practical` assuming you haven't moved any files and you do have the development version of libcurl installed   and use `./practical` to run it.
-  - To install libcurl:
-  #### Debian: `sudo apt install lincurl4-openssl-dev`
-  #### Arch: `sudo pacman -S curl`
+  ###- To install libcurl:
+    #### Debian: `sudo apt install lincurl4-openssl-dev`
+    #### Arch: `sudo pacman -S curl`
