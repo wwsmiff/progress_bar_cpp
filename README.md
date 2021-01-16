@@ -13,4 +13,6 @@
 - Initializing a progress bar - `progressBar name(char notDoneChar, char doneChar,unsigned int size)`, notDoneChar is what the bar will be filled with before it starts to do a process, doneChar is what the progress bar will fill up while a process is being done. size is the size of the     bar.
 - fillUp() - Fills the bar by 1 everytime it is called.
 - fillUpCells(int cells) - Fills the bar upto a given number.
+- displayPercentage() - Displays the percentage of work done.
+- displayTasksDone() - Displays number of tasks done out of the number of taks to be done eg.`(1 / 28)`
 - end() - Call this function before printing anything when the bar is no longer needed.
