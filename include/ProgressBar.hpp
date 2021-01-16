@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <string>
 
-class progressBar
+class ProgressBar
 {
 	public:
 		/* Takes in a char for filling up the bar and the size fo the bar */
-		progressBar(char notDoneChar, char doneChar, unsigned int size);
+		ProgressBar(char notDoneChar, char doneChar, unsigned int size);
 		void end();
 		
 		/* Fills the bar upto a given number */

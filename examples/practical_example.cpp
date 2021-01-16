@@ -1,10 +1,10 @@
 #include <iostream>
 #include <curl/curl.h>
-#include "../include/progress_bar.hpp"
+#include "../include/ProgressBar.hpp"
 
 int main()
 {
-	progressBar bar('.', '=', 30);
+	ProgressBar bar('.', '=', 30);
 
 	std::cout << "Downloading onedark.vim from https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim" << std::endl;
 
