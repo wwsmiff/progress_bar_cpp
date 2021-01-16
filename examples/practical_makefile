@@ -1,0 +1,9 @@
+
+practical: practical_example.o ProgressBar.o
+	g++ practical_example.o ProgressBar.o -o practical -lcurl
+
+practical_example.o: practical_example.cpp
+	g++ -c practical_example.cpp
+
+ProgressBar.o: ../src/ProgressBar.cpp ../include/ProgressBar.hpp
+	g++ -c ../src/ProgressBar.cpp

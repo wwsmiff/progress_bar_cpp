@@ -1,4 +1,4 @@
-#include "include/ProgressBar.hpp"
+#include "../include/ProgressBar.hpp"
 #include <unistd.h>
 
 unsigned int micros = 1000000; // microseconds to seconds

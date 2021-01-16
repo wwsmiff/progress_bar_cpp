@@ -1,0 +1,9 @@
+
+example: example.o ProgressBar.o
+	g++ example.o ProgressBar.o -o example
+
+example.o: example.cpp
+	g++ -c example.cpp
+
+ProgressBar.o: ../include/ProgressBar.hpp ../src/ProgressBar.cpp
+	g++ -c ../src/ProgressBar.cpp

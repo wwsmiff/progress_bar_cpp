@@ -14,12 +14,15 @@ int main()
 	std::string url = "https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim";
 	const char *URL = url.c_str();
 	curl_easy_setopt(downloader, CURLOPT_URL, URL);
-	bar.fillUpCells(10);	
+	bar.fillUpCells(10);
+	bar.displayPercentage();	
 	curl_easy_setopt(downloader, CURLOPT_WRITEDATA, file);
 	bar.fillUpCells(20);	
+	bar.displayPercentage();
 	result = curl_easy_perform(downloader);
 	fclose(file);
 	bar.fillUpCells(30);	
+	bar.displayPercentage();
 	curl_easy_cleanup(downloader);
 
 	bar.end();
