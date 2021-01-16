@@ -5,9 +5,6 @@
 ## The output of examples/example.cpp:
 ![](gifs/example.gif)
 
-## A practical example (examples/practical_example.cpp):
-![](gifs/practical-example.gif)
-
 ## Documentation:
 
 - Initializing a progress bar - `progressBar name(char notDoneChar, char doneChar,unsigned int size)`, notDoneChar is what the bar will be filled with before it starts to do a process, doneChar is what the progress bar will fill up while a process is being done. size is the size of the     bar.
