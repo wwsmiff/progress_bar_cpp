@@ -22,7 +22,8 @@ class ProgressBar
 	
 		unsigned int todo = 0;
 		unsigned int done = 0;
-
+		
+		/* Shows tasks done out of the tasks to be done */
 		void displayTasksDone();
 
 	private:
@@ -32,5 +33,3 @@ class ProgressBar
 		char ch;
 		std::vector <char> bar;
 };
-
-

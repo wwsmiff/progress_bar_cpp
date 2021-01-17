@@ -56,6 +56,7 @@ void ProgressBar::displayPercentage()
 	std::cout << (int)percent << "%";
 }
 
+/* Shows tasks done out of the tasks to be done */
 void ProgressBar::displayTasksDone()
 {
 	std::cout << '(' << done << '/' << todo << ')' << std::flush;
