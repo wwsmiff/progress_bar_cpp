@@ -13,6 +13,7 @@
 - `displayPercentage()` - Displays the percentage of work done.
 - `displayTasksDone()` - Displays number of tasks done out of the number of taks to be done eg.`(1 / 28)`
 - `end()` - Call this function before printing anything to the terminal and when the bar is no longer needed.
+- `getSize()` - This function returns the size of the progress bar (the number of cells).
 
 ## Try it yourself:
 - example.cpp - You can do it by using `make example` assuming you haven't moved any files. Use `./example` to run it.
