@@ -11,6 +11,9 @@ class ProgressBar
 		ProgressBar(char notDoneChar, char doneChar, unsigned int size);
 		void end();
 		
+		unsigned int todo;
+		unsigned int done;
+		
 		/* Fills the bar upto a given number */
 		void fillUpCells(unsigned int cells);
 		
@@ -20,11 +23,12 @@ class ProgressBar
 		/* Displays the percentage beside the bar */
 		void displayPercentage();
 	
-		unsigned int todo = 0;
-		unsigned int done = 0;
 		
 		/* Shows tasks done out of the tasks to be done */
 		void displayTasksDone();
+
+		/* Returns the size of the progress bar */
+		unsigned int getSize();
 
 	private:
 		unsigned int size = 0;

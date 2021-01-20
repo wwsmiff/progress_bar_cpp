@@ -1,7 +1,7 @@
 #include "../include/ProgressBar.hpp"
 /* Defining the constructor */
 ProgressBar::ProgressBar(char notDoneChar, char doneChar, unsigned int size)
-:c(doneChar), ch(notDoneChar), size(size)
+:c(doneChar), ch(notDoneChar), size(size), todo(0), done(0)
 {
 	if(size <= 100)
 	{
@@ -11,7 +11,7 @@ ProgressBar::ProgressBar(char notDoneChar, char doneChar, unsigned int size)
 		size = 100;
 	}
 	bar.push_back('[');
-	for(int i = 1; i < size; i++)
+	for(int i = 1; i < size + 1; i++)
 	{
 		bar.push_back(ch);
 	}
@@ -60,6 +60,13 @@ void ProgressBar::displayPercentage()
 void ProgressBar::displayTasksDone()
 {
 	std::cout << '(' << done << '/' << todo << ')' << std::flush;
+}
+
+/* Returns the size of the progress bar */
+
+unsigned int ProgressBar::getSize()
+{
+	return bar.size() - 2;
 }
 
 void ProgressBar::end()
